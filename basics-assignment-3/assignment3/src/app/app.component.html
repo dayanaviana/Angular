@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="row">
+    <button class="btn"
+      (click)="onBtnDisplayDetailsClick_($event)"
+    >Display Details</button>
+    <p *ngIf="showParagraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit minima quam corrupti eos ut beatae illo quia enim iure necessitatibus, qui eum, repudiandae molestias tempora. Sed voluptas dicta excepturi odit ad aperiam et rerum repellendus asperiores cum neque fugiat, amet, molestiae officiis alias suscipit adipisci impedit! Perspiciatis, quam. Sapiente, officia?</p>
+    <p *ngFor="let a of myArray; let i = index"
+      [ngStyle]="{backgroundColor:i>=5?'blue':'white'}"
+      [ngClass]="{text_white: i>=5}"
+    >{{i}}</p>
+  </div>
+</div>
+
